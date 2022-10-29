@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="MeshCreator.frmDeviationGraph" Collapsed="true">
+    <Position X="16.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACggAAAAIACAAAACAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\frmDeviationGraph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.frmFlash" Collapsed="true">
+    <Position X="18.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAFAAAACAAAICAAAAAAAAAAABAAQAAAA=</HashCode>
+      <FileName>Forms\frmFlash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.frmMain" Collapsed="true">
+    <Position X="9.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAKAIAAABhAAAAAAAAACIAAAQAEAAACIAAAAAAI=</HashCode>
+      <FileName>Forms\frmMain.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.ByteCube" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAACAAgAAQAAAAAQQQQAAAAAAAAAAAAAYCAAA=</HashCode>
+      <FileName>Support\Byte\ByteCube.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.ByteImage" Collapsed="true">
+    <Position X="0.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQABAAABACABgAACIkAEgUAQBAAAgAAEBQAAAAoAAAI=</HashCode>
+      <FileName>Support\Byte\ByteImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.CatalogueItem" Collapsed="true">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Support\Byte\ObjectCatalogue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.ObjectCatalogue" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAAAQAAABEAAAAAAAAQAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Support\Byte\ObjectCatalogue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.ColorMarshal" Collapsed="true">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCCCAACwAIAgUggAAEIgAABgAEB4AAAAgWCQhAAAgQA=</HashCode>
+      <FileName>Support\ColorMarshal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.IP" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggACEAAAAAgIAAAAAAAAAAAUAABAAAAAAAoAAAAAAo=</HashCode>
+      <FileName>Support\IP.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.Branch" Collapsed="true">
+    <Position X="2.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAABAAAAQAIAAAAAAAAAgAgAAAAAAAAAAA=</HashCode>
+      <FileName>Support\MRIObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.MRIObject" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAEAAAAJEBAAAAAAlAAAgAAABgAAKAAChAAAA=</HashCode>
+      <FileName>Support\MRIObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.MyBenchmark" Collapsed="true">
+    <Position X="17.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAEAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Support\MyBenchmark.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.References" Collapsed="true">
+    <Position X="16.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAQAIAAAAABAAwAAACAgAIAAAAAA=</HashCode>
+      <FileName>Support\References.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.UmImage" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAACAAAAAAAAIAIAAAAAEAAAAgAIAABA=</HashCode>
+      <FileName>Support\UmImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.DevGraph" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACACCAAAAAAACAAAAKCAAAAAAAEAQCAAAAAAA=</HashCode>
+      <FileName>User Controls\Deviation\DevGraph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.Graph" Collapsed="true">
+    <Position X="13.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAACECCAAABABAACAAAACAAAAABAgAIAAAgBCQAA=</HashCode>
+      <FileName>User Controls\Deviation\Graph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.DilaEroCon" Collapsed="true">
+    <Position X="10.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAASECAAAAAgAACAAAACYAAQQAAAAIACEAQIAAA=</HashCode>
+      <FileName>User Controls\Filters\DilaEroCon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.FilterList" Collapsed="true">
+    <Position X="12" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAkQBAAIICEABAAAABCAQAACQAAAAAAEBAAKEQAAgAA=</HashCode>
+      <FileName>User Controls\Filters\FilterList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.ProcessListCon" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAICAABABQAgCAAACDwwAAIgAAAAADAIAEAAA=</HashCode>
+      <FileName>User Controls\Filters\ProcessListCon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.CellCon" Collapsed="true">
+    <Position X="16.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAQACgAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>User Controls\Filters\Sub\CellCon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.StructureEleCon" Collapsed="true">
+    <Position X="8.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAABAIQQACAACAAAAACBAAECAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>User Controls\Filters\Sub\StructureEleCon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.Threshold" Collapsed="true">
+    <Position X="11.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAgBCgAJAAgAACACIAGRAAAQFEAAoQCAAAAEEA=</HashCode>
+      <FileName>User Controls\Filters\Threshold.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.ImageListEx" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAFCICBEKEIBIKBAYCBCABiQNECABAQACoCQAQAACA=</HashCode>
+      <FileName>User Controls\ImageListEx.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="MeshCreator.MRIToolBar" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAUAICBCBAAAQGCQAAJCcAiACAACAgACAAgBIAE=</HashCode>
+      <FileName>User Controls\MRIToolBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.PicContainer" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAACACAABBEAAACgAAACAAAgAIAIAIACgAAAAIA=</HashCode>
+      <FileName>User Controls\Pic\PicContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.ProcessItem" Collapsed="true">
+    <Position X="4" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQQAAAAABAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User Controls\Pic\ProcessList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.ProcessList" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAEAAAAAABAQABAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>User Controls\Pic\ProcessList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.PlayStopBut" Collapsed="true">
+    <Position X="16.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAACBACAAAAAAABCIAAACwAAIAAAAIEACAAAAAgA=</HashCode>
+      <FileName>User Controls\PlayStopBut.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.PointInfo" Collapsed="true">
+    <Position X="18.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACQAAgRAAAAAACABAAAAA=</HashCode>
+      <FileName>User Controls\PointInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.DoubleSlider" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAECGAAAgYAAACAAgACAAAAAAAAAAAKAAAAAAA=</HashCode>
+      <FileName>User Controls\Sub\DoubleSlider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.Slide" Collapsed="true">
+    <Position X="8.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAAKkAAAAIAACCAAACQAAAAAAAABQCAIIAAQI=</HashCode>
+      <FileName>User Controls\Sub\Slide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.Properties.Resources" Collapsed="true">
+    <Position X="18.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAgAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MeshCreator.Properties.Settings" Collapsed="true">
+    <Position X="15" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="MeshCreator.MySize" Collapsed="true">
+    <Position X="14.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Support\Global.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeshCreator.MyPoint" Collapsed="true">
+    <Position X="8" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAABgAAAABAA=</HashCode>
+      <FileName>Support\Global.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeshCreator.MyColor" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAIAQABAAAAAAA=</HashCode>
+      <FileName>Support\Global.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeshCreator.MyScanData" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAEAAAAAAAAAAAAAAAAQAkAAAAABAA=</HashCode>
+      <FileName>Support\Global.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MeshCreator.FloodFillInfo" Collapsed="true">
+    <Position X="6.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAgAIAAAAAAAAAIAEAACAAAgAAAAIAAAAAA=</HashCode>
+      <FileName>Support\Global.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="MeshCreator.MRIPropTypes" Collapsed="true">
+    <Position X="6.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAI=</HashCode>
+      <FileName>Support\Global.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MeshCreator.MRISteps" Collapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Support\Global.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="MeshCreator.ProcessType" Collapsed="true">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAACAAAAAAAAAAAAAAABgAAgEAAAAAgAAAAAAY=</HashCode>
+      <FileName>User Controls\Pic\ProcessList.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

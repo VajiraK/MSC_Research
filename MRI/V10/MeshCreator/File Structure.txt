@@ -1,0 +1,19 @@
+﻿
+	CubeFile structure
+==========================
+	
+MRI-VAJIRA-V1
+
+(int)SLIDE-WIDTH
+(int)SLIDE-HEIGHT
+(int)NO-OF-SLIDES 
+
+(int)AXIS-POINT-X
+(int)AXIS-POINT-Y
+
+(byte[])CROSSECTION-IMAGE-DATA
+
+(byte)NO-OF-OBJECTS
+(int)NO-OF-BOADER-BRANCHES
+(int)BOADER-BRANCH-LENGTH
+(byte[])BOADER-BRANCH-DATA

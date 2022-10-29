@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03077B44-7AE6-46E8-B967-2787C13104AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MeshCreator</RootNamespace>
+    <AssemblyName>MeshCreator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accord.Imaging">
+      <HintPath>dll\Accord.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge">
+      <HintPath>dll\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AForge.Imaging">
+      <HintPath>dll\AForge.Imaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\frmDeviationGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDeviationGraph.Designer.cs">
+      <DependentUpon>frmDeviationGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmFlash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmFlash.Designer.cs">
+      <DependentUpon>frmFlash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Support\Byte\ByteImage.cs" />
+    <Compile Include="Support\Byte\ByteCube.cs" />
+    <Compile Include="Support\Byte\ObjectCatalogue.cs" />
+    <Compile Include="Support\ColorMarshal.cs" />
+    <Compile Include="Support\IP.cs" />
+    <Compile Include="Support\MRIObject.cs" />
+    <Compile Include="Support\Global.cs" />
+    <Compile Include="Support\MyBenchmark.cs" />
+    <Compile Include="Support\UmImage.cs" />
+    <Compile Include="User Controls\Deviation\DevGraph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Deviation\DevGraph.Designer.cs">
+      <DependentUpon>DevGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Deviation\Graph.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Deviation\Graph.Designer.cs">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Filters\DilaEroCon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Filters\DilaEroCon.Designer.cs">
+      <DependentUpon>DilaEroCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Filters\FilterList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Filters\FilterList.Designer.cs">
+      <DependentUpon>FilterList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Filters\ProcessListCon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Filters\ProcessListCon.Designer.cs">
+      <DependentUpon>ProcessListCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Filters\Sub\CellCon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Filters\Sub\CellCon.Designer.cs">
+      <DependentUpon>CellCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Filters\Sub\StructureEleCon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Filters\Sub\StructureEleCon.Designer.cs">
+      <DependentUpon>StructureEleCon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\MRIToolBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\MRIToolBar.Designer.cs">
+      <DependentUpon>MRIToolBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicContainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicContainer.Designer.cs">
+      <DependentUpon>PicContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Pic\ProcessList.cs" />
+    <Compile Include="Support\References.cs" />
+    <Compile Include="Forms\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Support\ImageProcessor.cs" />
+    <Compile Include="User Controls\ImageListEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\ImageListEx.Designer.cs">
+      <DependentUpon>ImageListEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicEx.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicEx.Designer.cs">
+      <DependentUpon>PicEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicExFinal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicExFinal.Designer.cs">
+      <DependentUpon>PicExFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicExIntermediate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicExIntermediate.Designer.cs">
+      <DependentUpon>PicExIntermediate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Pic\picExOriginal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Pic\picExOriginal.Designer.cs">
+      <DependentUpon>picExOriginal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicExOverLay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicExOverLay.Designer.cs">
+      <DependentUpon>PicExOverLay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\frmDeviationGraph.resx">
+      <DependentUpon>frmDeviationGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmFlash.resx">
+      <DependentUpon>frmFlash.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Deviation\DevGraph.resx">
+      <DependentUpon>DevGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Deviation\Graph.resx">
+      <DependentUpon>Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Filters\DilaEroCon.resx">
+      <DependentUpon>DilaEroCon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Filters\FilterList.resx">
+      <DependentUpon>FilterList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Filters\ProcessListCon.resx">
+      <DependentUpon>ProcessListCon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Filters\Sub\CellCon.resx">
+      <DependentUpon>CellCon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Filters\Sub\StructureEleCon.resx">
+      <DependentUpon>StructureEleCon.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\ImageListEx.resx">
+      <DependentUpon>ImageListEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\MRIToolBar.resx">
+      <DependentUpon>MRIToolBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Pic\PicContainer.resx">
+      <DependentUpon>PicContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Pic\PicEx.resx">
+      <DependentUpon>PicEx.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Pic\PicExFinal.resx">
+      <DependentUpon>PicExFinal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Pic\PicExIntermediate.resx">
+      <DependentUpon>PicExIntermediate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Pic\picExOriginal.resx">
+      <DependentUpon>picExOriginal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Pic\PicExOverLay.resx">
+      <DependentUpon>PicExOverLay.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Pic\PicExPipeline.resx">
+      <DependentUpon>PicExPipeline.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\PlayStopBut.resx">
+      <DependentUpon>PlayStopBut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\PointInfo.resx">
+      <DependentUpon>PointInfo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Sub\DoubleSlider.resx">
+      <DependentUpon>DoubleSlider.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Sub\Slide.resx">
+      <DependentUpon>Slide.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls\Filters\Threshold.resx">
+      <DependentUpon>Threshold.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicExPipeline.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Pic\PicExPipeline.Designer.cs">
+      <DependentUpon>PicExPipeline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\PlayStopBut.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\PlayStopBut.Designer.cs">
+      <DependentUpon>PlayStopBut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\PointInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\PointInfo.Designer.cs">
+      <DependentUpon>PointInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Sub\DoubleSlider.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Sub\DoubleSlider.Designer.cs">
+      <DependentUpon>DoubleSlider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Sub\Slide.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Sub\Slide.Designer.cs">
+      <DependentUpon>Slide.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls\Filters\Threshold.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls\Filters\Threshold.Designer.cs">
+      <DependentUpon>Threshold.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="File Structure.txt" />
+    <Content Include="ToDo.txt" />
+    <None Include="Resources\Stop.png" />
+    <None Include="Resources\Play1.png" />
+    <None Include="Resources\Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

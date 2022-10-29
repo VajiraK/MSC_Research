@@ -1,0 +1,8 @@
+Slide Selection
+Multiple Objects
+Area Selection
+Fill Holes
+Filter parameters discription
+Remove control pannel			- OK
+Cross Section Image
+Threshold
